@@ -11,7 +11,7 @@ public class ShareLaneTest {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.sharelane.com/cgi-bin/register.py");
-        driver.findElement(By.name("zip_code")).sendKeys("123456");
+        driver.findElement(By.name("zip_code")).sendKeys("75204");
         driver.findElement(By.xpath("//*[@value='Continue']")).click();
         driver.quit();
     }
