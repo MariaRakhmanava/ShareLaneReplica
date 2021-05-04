@@ -13,7 +13,6 @@ public class ShareLaneTest {
         driver.get("https://www.sharelane.com/cgi-bin/register.py");
         driver.findElement(By.name("zip_code")).sendKeys("75204");
         driver.findElement(By.xpath("//*[@value='Continue']")).click();
-        driver.quit();
     }
 
     @Test
@@ -27,7 +26,6 @@ public class ShareLaneTest {
         driver.findElement(By.name("password1")).sendKeys("ijkl890%");
         driver.findElement(By.name("password2")).sendKeys("ijkl890%");
         driver.findElement(By.xpath("//*[@value='Register']")).click();
-        driver.quit();
     }
 
     @Test
@@ -41,7 +39,6 @@ public class ShareLaneTest {
         driver.findElement(By.name("password1")).sendKeys("");
         driver.findElement(By.name("password2")).sendKeys("");
         driver.findElement(By.xpath("//*[@value='Register']")).click();
-        driver.quit();
     }
 
 }
